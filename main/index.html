@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftDrop Pro — Fast. Safe. Reliable. Delivered.</title>
+  <link rel="stylesheet" href="css\style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ░░ CURSOR ░░ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <img src="assets/image/swiftdroppro_logo.png" alt="SwiftDrop Pro" class="nav-logo" />
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#roles">Roles</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+      <a href="#download" class="nav-cta">Get App</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#roles">Roles</a>
+      <a href="#download">Download</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-lines"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Now Available on Android
+      </div>
+
+      <h1 class="hero-title reveal">
+        Delivery.<br />
+        <span class="gradient-text">Reimagined.</span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        SwiftDrop Pro connects shops, customers, and delivery agents in one seamless platform. Order, track, and deliver — faster than ever.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#download" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341a4.528 4.528 0 0 1-2.24-3.932 4.528 4.528 0 0 1 2.17-3.872A4.63 4.63 0 0 0 13.5 5.5c-1.79 0-2.37.86-3.52.86-1.19 0-2.09-.86-3.52-.86A4.74 4.74 0 0 0 2.5 10.23c0 3.33 2.94 8.77 5.25 8.77.96 0 1.57-.61 2.94-.61 1.34 0 1.89.61 2.94.61 2.4 0 5.25-5.47 5.25-8.77a4.598 4.598 0 0 1-1.34.88zM13.04 4.5c.54-.64.91-1.52.81-2.5-.79.04-1.74.53-2.3 1.19-.5.58-.95 1.48-.83 2.34.87.07 1.77-.42 2.32-1.03z"/></svg>
+          App Store
+        </a>
+        <a href="#download" class="btn-primary btn-android">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 15.341 6.48 8.66A.5.5 0 0 0 5.75 9.1v5.8a.5.5 0 0 0 .73.44l11.04-6.68a.5.5 0 0 0 0-.87zM3 3.5A.5.5 0 0 1 3.5 3h.25a.5.5 0 0 1 .5.5v17a.5.5 0 0 1-.5.5H3.5a.5.5 0 0 1-.5-.5v-17zm14.75 0a.5.5 0 0 1 .5.5v17a.5.5 0 0 1-.5.5H17.5a.5.5 0 0 1-.5-.5v-17a.5.5 0 0 1 .5-.5h.25z"/></svg>
+          Google Play
+        </a>
+        <a href="assets\apk\Swift Drop Pro.apk" class="btn-outline" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Direct APK
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">User Roles</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Real-time</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Products</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-phone reveal">
+      <div class="phone-wrap">
+        <div class="phone-frame">
+          <div class="phone-screen">
+            <img src="assets/image/login.jpeg" alt="App Screenshot" class="phone-img active" id="heroScreen" />
+          </div>
+          <div class="phone-notch"></div>
+          <div class="phone-home-bar"></div>
+        </div>
+        <div class="phone-glow"></div>
+        <div class="floating-card card-1">
+          <div class="fc-icon">📦</div>
+          <div class="fc-text">
+            <span>Order Placed</span>
+            <small>Rice · ₹50</small>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="fc-icon">🚴</div>
+          <div class="fc-text">
+            <span>On the Way</span>
+            <small>2 min away</small>
+          </div>
+        </div>
+        <div class="floating-card card-3">
+          <div class="fc-icon">✅</div>
+          <div class="fc-text">
+            <span>Delivered!</span>
+            <small>UPI · ₹50</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FEATURES
+  ═══════════════════════════════════════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label reveal">Core Features</div>
+      <h2 class="section-title reveal">Everything you need,<br /><em>nothing you don't.</em></h2>
+
+      <div class="features-grid">
+
+        <div class="feature-card reveal" style="--delay:0s">
+          <div class="fc-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>Real-time Updates</h3>
+          <p>Firebase Realtime Database keeps every order status synced instantly across all users — no refresh needed.</p>
+        </div>
+
+        <div class="feature-card reveal" style="--delay:0.08s">
+          <div class="fc-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Order Tracking</h3>
+          <p>Visual timeline from Placed → Confirmed → On the Way → Delivered. Customers always know where their order is.</p>
+        </div>
+
+        <div class="feature-card reveal" style="--delay:0.16s">
+          <div class="fc-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h3>Multiple Payments</h3>
+          <p>UPI, Card, and Cash on Delivery — customers choose how they pay at checkout with a clean, intuitive UI.</p>
+        </div>
+
+        <div class="feature-card reveal" style="--delay:0.24s">
+          <div class="fc-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>3 User Roles</h3>
+          <p>Shop owners manage products & orders. Customers browse & buy. Delivery agents accept and fulfil deliveries.</p>
+        </div>
+
+        <div class="feature-card reveal" style="--delay:0.32s">
+          <div class="fc-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Secure Auth</h3>
+          <p>Firebase Authentication keeps accounts safe. Role-based routing ensures each user only sees what they need.</p>
+        </div>
+
+        <div class="feature-card reveal" style="--delay:0.4s">
+          <div class="fc-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Offline-ready Cart</h3>
+          <p>Hive local storage keeps the cart available even without internet. Orders sync when back online.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SCREENSHOTS
+  ═══════════════════════════════════════════════ -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-label reveal">App Screenshots</div>
+      <h2 class="section-title reveal">See it in<br /><em>action.</em></h2>
+      <p class="section-sub reveal">Every screen crafted for clarity and speed. Dark-first design that's easy on the eyes.</p>
+    </div>
+
+    <div class="screenshot-track-wrap">
+      <div class="screenshot-track" id="screenshotTrack">
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/login.jpeg"" alt="Login Screen" />
+          </div>
+          <div class="ss-label">Login</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/user home.jpeg" alt="Customer Home" />
+          </div>
+          <div class="ss-label">Customer Home</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/cart.jpeg" alt="Cart" />
+          </div>
+          <div class="ss-label">Cart</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/home delivery.jpeg" alt="Deliver home" />
+          </div>
+          <div class="ss-label">Deliver home Page</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/tracking.jpeg" alt="Order Tracking" />
+          </div>
+          <div class="ss-label">Tracking</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/shopdashboard.jpeg" alt="Shop Dashboard" />
+          </div>
+          <div class="ss-label">Shop Dashboard</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/shopprofile.jpeg" alt="shop Profile" />
+          </div>
+          <div class="ss-label">Shop Profile</div>
+        </div>
+
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/userprofile.jpeg" alt=" Customer Profile" />
+          </div>
+          <div class="ss-label">Customer Profile</div>
+        </div>
+
+        <!-- Duplicates for infinite loop -->
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/reg1.jpeg" alt="Register Screen" />
+          </div>
+          <div class="ss-label">Register</div>
+        </div>
+        <div class="ss-card">
+          <div class="ss-phone">
+            <img src="assets/image/payment.jpeg" alt="Payments" />
+          </div>
+          <div class="ss-label">Payment</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ss-nav">
+      <button class="ss-btn" id="ssPrev" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="ss-dots" id="ssDots"></div>
+      <button class="ss-btn" id="ssNext" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       ROLES
+  ═══════════════════════════════════════════════ -->
+  <section class="roles" id="roles">
+    <div class="container">
+      <div class="section-label reveal">Who's it for?</div>
+      <h2 class="section-title reveal">Three roles,<br /><em>one app.</em></h2>
+
+      <div class="roles-grid">
+
+        <div class="role-card reveal" style="--delay:0s; --role-color: #2563EB">
+          <div class="role-num">01</div>
+          <div class="role-icon">🏪</div>
+          <h3>Shop Owner</h3>
+          <ul>
+            <li>Add & manage products</li>
+            <li>View and advance order status</li>
+            <li>Dashboard with live stats</li>
+            <li>Real-time order notifications</li>
+          </ul>
+          <div class="role-tag">Shop</div>
+        </div>
+
+        <div class="role-card reveal" style="--delay:0.12s; --role-color: #FF6B35">
+          <div class="role-num">02</div>
+          <div class="role-icon">🛒</div>
+          <h3>Customer</h3>
+          <ul>
+            <li>Browse products by category</li>
+            <li>Cart with offline support</li>
+            <li>UPI, Card & COD checkout</li>
+            <li>Live order tracking timeline</li>
+          </ul>
+          <div class="role-tag">Customer</div>
+        </div>
+
+        <div class="role-card reveal" style="--delay:0.24s; --role-color: #22C55E">
+          <div class="role-num">03</div>
+          <div class="role-icon">🚴</div>
+          <h3>Delivery Agent</h3>
+          <ul>
+            <li>Accept confirmed orders</li>
+            <li>Mark deliveries complete</li>
+            <li>Earnings & stats dashboard</li>
+            <li>See only relevant orders</li>
+          </ul>
+          <div class="role-tag">Delivery</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       TECH STACK
+  ═══════════════════════════════════════════════ -->
+  <section class="tech">
+    <div class="container">
+      <div class="section-label reveal">Built With</div>
+      <div class="tech-row reveal">
+        <div class="tech-item">
+          <img src="https://storage.googleapis.com/cms-storage-bucket/0dbfcc7a59cd1cf16171.png" alt="Flutter" />
+          <span>Flutter</span>
+        </div>
+        <div class="tech-item">
+          <img src="https://www.gstatic.com/mobilesdk/160503_mobilesdk/logo/2x/firebase_96dp.png" alt="Firebase" />
+          <span>Firebase</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon-fallback" style="background:#FF6B35">H</div>
+          <span>Hive DB</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon-fallback" style="background:#2563EB">D</div>
+          <span>Dart</span>
+        </div>
+        <div class="tech-item">
+          <div class="tech-icon-fallback" style="background:#22C55E">RT</div>
+          <span>Realtime DB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       DOWNLOAD
+  ═══════════════════════════════════════════════ -->
+  <section class="download" id="download">
+    <div class="download-bg">
+      <div class="orb orb-d1"></div>
+      <div class="orb orb-d2"></div>
+    </div>
+    <div class="container">
+      <div class="download-inner reveal">
+        <img src="assets/image/swiftdroppro_logo.png" alt="SwiftDrop Pro" class="download-logo" />
+        <h2>Ready to<br /><span class="gradient-text">SwiftDrop?</span></h2>
+        <p>Download the app and experience the fastest local delivery platform — free for shops, customers, and agents.</p>
+
+        <div class="download-btns">
+          <a href="#" class="dl-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="store-icon"><path d="M17.523 15.341a4.528 4.528 0 0 1-2.24-3.932 4.528 4.528 0 0 1 2.17-3.872A4.63 4.63 0 0 0 13.5 5.5c-1.79 0-2.37.86-3.52.86-1.19 0-2.09-.86-3.52-.86A4.74 4.74 0 0 0 2.5 10.23c0 3.33 2.94 8.77 5.25 8.77.96 0 1.57-.61 2.94-.61 1.34 0 1.89.61 2.94.61 2.4 0 5.25-5.47 5.25-8.77a4.598 4.598 0 0 1-1.34.88zM13.04 4.5c.54-.64.91-1.52.81-2.5-.79.04-1.74.53-2.3 1.19-.5.58-.95 1.48-.83 2.34.87.07 1.77-.42 2.32-1.03z"/></svg>
+            <div>
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+          <a href="#" class="dl-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="store-icon"><path d="M3.18 23.76c.3.17.65.18.96.03l13.07-7.33-2.75-2.75-11.28 10.05zM.44 1.06C.17 1.38 0 1.84 0 2.44v19.12c0 .6.17 1.06.44 1.38l.07.07L10.9 12.57v-.25L.51.99l-.07.07zM20.55 10.5l-2.74-1.54-3.07 3.07 3.07 3.07 2.77-1.55c.79-.44.79-1.6-.03-2.05zM3.18.24L16.25 7.57l-2.75 2.75L2.22.27c.3-.15.66-.14.96-.03z"/></svg>
+            <div>
+              <small>Get it on</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+
+        <a href="assets\apk\Swift Drop Pro.apk" class="apk-link" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download APK directly
+        </a>
+
+        <div class="qr-section">
+          <div class="qr-box">
+            <div class="qr-placeholder">
+              <div class="qr-grid" id="qrGrid"></div>
+            </div>
+            <span>Scan to download</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <img src="assets/image/swiftdroppro_logo.png" alt="SwiftDrop Pro" class="footer-logo" />
+        <p class="footer-tagline">Fast. Safe. Reliable. <strong>Delivered.</strong></p>
+        <p class="footer-copy">© 2026 SwiftDrop Pro. Built with Flutter & Firebase.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js\script.js"></script>
+</body>
+</html>
